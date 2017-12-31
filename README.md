@@ -1,1 +1,3 @@
-# kernel-mtk 
+# kernel- panelli
+
+moto c plus kernel
