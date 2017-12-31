@@ -1,0 +1,16 @@
+
+mkdir -p out
+
+export USE_CCACHE=1
+
+export ARCH=arm ARCH_MTK_PLATFORM=mt6735
+
+export KBUILD_BUILD_USER="DhirajMS"
+
+export KBUILD_BUILD_HOST="WinterIsHere"
+
+export CROSS_COMPILE=/home/DhirajMS/c+/kernel/toolchain/bin/arm-eabi-
+
+make -C $PWD O=$PWD/out ARCH=arm A158_defconfig
+
+make -j16 -C $PWD O=$PWD/out ARCH=arm
